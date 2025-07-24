@@ -17,41 +17,39 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-gray-100 noto-serif-asgn02 max-w-[1140] box-border">
+  <body class="bg-gray-100 noto-serif-asgn02 box-border">
     <section
       class="header w-9/10 mt-10 ml-10 mr-10 border-2 border-amber-400 box-content"
     >
-      <div class="major flex flex-col justify-center">
-        <div class="navbar flex flex-row items-center justify-between">
-          <!-- <div class="navbar-logo max-md:w-1/10 flex justify-start"> -->
-          <img src="./assets/logo.png" alt="" />
-          <!-- </div> -->
-          <div class="navbar-menu justify-end items-start text-xl">
-            <ul class="flex flex-1 flex-row gap-6">
-              <li class="text-xl font-bold text-[#252432] invisible md:visible">
-                <a href="#">Home</a>
-              </li>
-              <li class="text-xl font-thin text-[#8987A1] invisible md:visible">
-                <a href="#">Shop</a>
-              </li>
-              <li class="text-xl font-thin text-[#8987A1] invisible md:visible">
-                <a href="#">About Us</a>
-              </li>
-              <li class="text-xl font-semibold text-black">
-                <a href=""
-                  ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
-                >
-              </li>
-            </ul>
-          </div>
+      <nav class="navbar flex flex-row items-center justify-between">
+        <img src="./assets/logo.png" alt="" />
+        <div class="navbar-menu justify-end items-start text-xl">
+          <ul class="flex flex-1 flex-row gap-6">
+            <li class="text-xl font-bold text-[#252432] invisible lg:visible">
+              <a href="#">Home</a>
+            </li>
+            <li class="text-xl font-thin text-[#8987A1] invisible lg:visible">
+              <a href="#">Shop</a>
+            </li>
+            <li class="text-xl font-thin text-[#8987A1] invisible lg:visible">
+              <a href="#">About Us</a>
+            </li>
+            <li class="text-xl font-semibold text-black">
+              <a href=""
+                ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </section>
     <section
-      class="banner w-9/10 mt-10 ml-10 mr-10 border-2 border-amber-400 box-border"
+      class="banner w-9/10 mt-10 ml-10 mr-10 mb-10 border-2 border-amber-400 box-border"
     >
-      <div class="banner-container flex flex-row mt-40 mb-10 justify-between">
-        <div class="relative grid grid-cols-3 gap-0.5 bg-yellow-100">
+      <div
+        class="banner-container flex flex-col-reverse lg:flex-row mt-40 mb-10 justify-center"
+      >
+        <div class="relative grid grid-cols-3 gap-0.5">
           <div class="col-span-2 bottom-0 left-0 p-1.5">
             <h1 class="text-bold text-6xl mt-32">
               Always
@@ -82,13 +80,13 @@
         <h2 class="text-bold text-5xl pt-10 text-center">
           <span class="text-[#E95A08]">Our </span>Plants
         </h2>
-        <p class="inter-asgn02 text-gray-500 text-xl pt-4 text-center">
+        <p class="inter-asgn02 text-gray-500 text-xl pt-4 p-1 text-center">
           Indulge your senses with the beauty and fragrance of our fresh flower
-          shop. <br />From classic roses to exotic blooms, we offer a wide
-          variety of fresh.
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
         </p>
         <div
-          class="mt-8 pt-8 pl-8 pr-8 pb-8 grid grid-cols-4 gap-y-8 items-center"
+          class="mt-8 pt-8 pl-8 pr-8 pb-8 grid grid-cols-2 gap-y-2 md:grid-cols-4 md:gap-y-8 items-center"
         >
           <div class="card max-w-64 border-1 items-center justify-center">
             <img
@@ -206,45 +204,45 @@
       </div>
     </section>
     <section
-      class="plant-lover w-9/10 mt-20 ml-10 mr-10 mb-10 border-2 border-amber-400 box-border"
+      class="plant-lover w-9/10 mt-10 ml-10 mr-10 mb-20 border-2 border-amber-400 box-border"
     >
-      <div class="container grid grid-cols-2 gap-8">
-        <div class="left p-10">
-          <div class="relative">
-            <img
-              class="aspect-video(1:1) scale-100 z-0"
-              src="./assets/flower-store.png"
-              alt="store"
-            />
-            <img
-              class="absolute scale-45 z-10 translate-x-[+200px] translate-y-[-900px]"
-              src="./assets/trusted-badge.png"
-              alt=""
-            />
-          </div>
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 gap-1.5 justify-center"
+      >
+        <div class="left min-w-[400px] relative items-center">
+          <img
+            class="scale-95 z-0 pl-10 fit-content"
+            src="./assets/flower-store.png"
+            alt="store"
+          />
+          <img
+            class="absolute scale-35 z-10 translate-x-[+200px] translate-y-[-350px] sm:invisible"
+            src="./assets/trusted-badge.png"
+            alt=""
+          />
         </div>
-        <div class="right">
+        <div class="right min-w-[200px] relative items-baseline">
           <h1 class="text-bold text-6xl mt-8 pt-8 pr-20">
             Flower & Plant <br />
             <span class="text-[#E95A08]">Lovers</span>
           </h1>
           <ul class="list-disc pr-20 pt-10">
             <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-2xl p-1.5">
+              <p class="inter-asgn02 text-gray-500 text-md p-1">
                 Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
               </p>
             </li>
             <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-2xl p-1.5">
+              <p class="inter-asgn02 text-gray-500 text-md p-1">
                 Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
               </p>
             </li>
             <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-2xl p-1.5">
+              <p class="inter-asgn02 text-gray-500 text-md p-1">
                 Indulge your senses with the beauty and fragrance of our fresh
                 flower shop. From classic roses to exotic blooms, we offer a
                 wide variety of fresh.
@@ -255,75 +253,76 @@
       </div>
     </section>
     <section
-      class="deals w-full mt-20 ml-10 mr-10 mb-10 border-2 border-amber-400 text-center box-border"
+      class="deals2 w-9/10 mt-20 ml-10 mr-10 mb-10 border-2 border-amber-400 text-center box-border"
     >
-      <h1 class="text-bold text-6xl mt-32 pb-2">
-        Latest <span class="text-[#E95A08]">Deals</span>
-      </h1>
-      <p class="inter-asgn02 text-gray-500 text-2xl p-1 pb-6">
-        Indulge your senses with the beauty and fragrance of our fresh flower
-        shop. From <br />classic roses to exotic blooms, we offer a wide variety
-        of fresh.
-      </p>
-      <div
-        class="pt-4 grid-container justify-center items-center gap-x-2 gap-y-2"
-      >
-        <div class="bloom">
-          <div class="bloom-image-container relative">
-            <img
-              class="rounded-2xl brightness-55 aspect-video(2:3)"
-              src="./assets/deal-bloom.png"
-              alt=""
-            />
-            <h2
-              class="text-xl top-16 left-8 right-8 bottom-8 text-white text-bold absolute"
-            >
-              60% Off | Bloom Plant
-            </h2>
-            <h2
-              class="text-sm top-24 left-9 right-8 bottom-8 text-white text-bold absolute underline"
-            >
-              Shop Now
-            </h2>
+      <div class="flex ml-10 mr-10 flex-col justify-center items-center">
+        <h1 class="text-bold text-6xl mt-32 pb-2">
+          Latest <span class="text-[#E95A08]">Deals</span>
+        </h1>
+        <p class="inter-asgn02 text-gray-500 text-2xl p-1 pb-6">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From <br />classic roses to exotic blooms, we offer a wide
+          variety of fresh.
+        </p>
+        <div
+          class="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
+        >
+          <div class="p-4 row-span-1">
+            <div class="relative">
+              <img
+                class="fit-content rounded-2xl brightness-55 object-cover"
+                src="./assets/deal-bloom.png"
+                alt=""
+              />
+              <h2
+                class="text-xl top-16 left-8 right-8 bottom-8 text-white text-bold absolute"
+              >
+                60% Off | Bloom Plant
+              </h2>
+              <h2
+                class="text-sm top-24 left-9 right-8 bottom-8 text-white text-bold absolute underline"
+              >
+                Shop Now
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="zabo">
-          <div class="zabo-img-container relative">
-            <img
-              class="rounded-2xl brightness-55"
-              src="./assets/deal-zabo.png"
-              alt=""
-            />
-
-            <h1
-              class="text-5xl top-36 left-8 right-8 bottom-8 text-white text-bold absolute"
-            >
-              25% Off | Zabo Plant
-            </h1>
-            <h2
-              class="text-xl top-52 left-12 right-12 bottom-8 text-white text-bold absolute underline"
-            >
-              Shop Now
-            </h2>
+          <div class="p-4 md:row-span-2 md:col-span-2">
+            <div class="relative">
+              <img
+                class="rounded-2xl brightness-55 object-cover"
+                src="./assets/deal-zabo.png"
+                alt=""
+              />
+              <h1
+                class="text-5xl top-36 left-8 right-8 bottom-8 text-white text-bold absolute"
+              >
+                25% Off | Zabo Plant
+              </h1>
+              <h2
+                class="text-xl top-52 left-12 right-12 bottom-8 text-white text-bold absolute underline"
+              >
+                Shop Now
+              </h2>
+            </div>
           </div>
-        </div>
-        <div class="ana">
-          <div class="ana-image-contianer relative">
-            <img
-              class="rounded-2xl pt-2 brightness-55 aspect-video(2:3)"
-              src="./assets/deal-ana.png"
-              alt=""
-            />
-            <h2
-              class="text-xl top-16 left-8 right-8 bottom-8 text-white text-bold absolute"
-            >
-              30% Off | Ana Plant
-            </h2>
-            <h2
-              class="text-sm top-24 left-9 right-8 bottom-8 text-white text-bold absolute underline"
-            >
-              Shop Now
-            </h2>
+          <div class="p-4 row-span-1">
+            <div class="relative">
+              <img
+                class="rounded-2xl brightness-55 object-cover"
+                src="./assets/deal-ana.png"
+                alt=""
+              />
+              <h2
+                class="text-xl top-16 left-8 right-8 bottom-8 text-white text-bold absolute"
+              >
+                30% Off | Ana Plant
+              </h2>
+              <h2
+                class="text-sm top-24 left-9 right-8 bottom-8 text-white text-bold absolute underline"
+              >
+                Shop Now
+              </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -355,7 +354,7 @@
       </div>
     </section>
     <section
-      class="footer w-full mt-20 mb-10 border-2 border-amber-400 box-border"
+      class="footer w-9/10 ml-10 mr-10 mt-20 mb-10 border-2 border-amber-400 box-border"
     >
       <div class="grid grid-cols-4 justify-center gap-1">
         <div class="flex flex-col justify-left pl-5 pt-2 pb-3">
