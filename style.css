@@ -14,3 +14,22 @@
   font-weight: 400;
   font-style: normal;
 }
+ul li::marker {
+  font-size: 1.25em; /* Adjust as needed */
+  color: gray;
+}
+.zabo {
+  grid-area: zabo;
+}
+.bloom {
+  grid-area: bloom;
+}
+.ana {
+  grid-area: ana;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "bloom zabo zabo"
+    "ana  zabo zabo";
+}
