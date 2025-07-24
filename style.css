@@ -33,3 +33,9 @@ ul li::marker {
     "bloom zabo zabo"
     "ana  zabo zabo";
 }
+.container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+}
