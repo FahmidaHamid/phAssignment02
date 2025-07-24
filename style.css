@@ -26,6 +26,22 @@
 .special-bullet ul li::marker {
   font-size: 1.4em; /* Adjust as needed */
   color: gray;
-  /* margin-left: 20px;
-  padding: 25px; */
+}
+
+.image-container {
+  position: relative;
+  max-width: 540px;
+  max-height: 597px;
+}
+.base-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.overlay-image {
+  position: absolute;
+  top: -200px;
+  left: 220px;
+  z-index: 2;
 }
