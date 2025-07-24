@@ -10,17 +10,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body class="bg-gray-100 noto-serif-asgn02 box-border">
-    <section
-      class="header w-9/10 mt-10 ml-10 mr-10 border-2 border-amber-400 box-content"
-    >
+    <section class="header w-9/10 mt-10 ml-10 mr-10 box-border">
       <nav class="navbar flex flex-row items-center justify-between">
         <img src="./assets/logo.png" alt="" />
         <div class="navbar-menu justify-end items-start text-xl">
@@ -43,9 +35,7 @@
         </div>
       </nav>
     </section>
-    <section
-      class="banner w-9/10 mt-10 ml-10 mr-10 mb-10 border-2 border-amber-400 box-border"
-    >
+    <section class="banner w-9/10 mt-10 ml-10 mr-10 mb-10 box-border">
       <div
         class="banner-container flex flex-1 flex-col-reverse lg:flex-row mt-40 mb-10 justify-center"
       >
@@ -71,9 +61,7 @@
         />
       </div>
     </section>
-    <section
-      class="plants w-9/10 mt-10 ml-10 mr-10 mb-20 border-2 border-amber-400 box-content"
-    >
+    <section class="plants w-9/10 mt-10 ml-10 mr-10 mb-20 box-border">
       <div class="flex flex-col justify-center">
         <h2 class="text-bold text-5xl pt-10 text-center">
           <span class="text-[#E95A08]">Our </span>Plants
@@ -84,9 +72,9 @@
           fresh.
         </p>
         <div
-          class="mt-8 pt-8 pl-8 pr-8 pb-8 grid grid-cols-2 gap-y-2 md:grid-cols-4 md:gap-y-8 items-center"
+          class="mt-8 pt-8 pl-8 pr-8 pb-8 grid grid-cols-2 gap-x-2 gap-y-2 md:grid-cols-4 md:gap-y-8 items-center"
         >
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -100,7 +88,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -114,7 +102,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -128,7 +116,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -142,7 +130,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -156,7 +144,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -170,7 +158,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -184,7 +172,7 @@
               Add to Cart
             </button>
           </div>
-          <div class="card max-w-64 border-1 items-center justify-center">
+          <div class="card max-w-64 items-center justify-center">
             <img
               class="scale-100 object-center"
               src="./assets/lilly.png"
@@ -201,25 +189,23 @@
         </div>
       </div>
     </section>
-    <section
-      class="plant-lover w-9/10 mt-10 ml-10 mr-10 mb-20 border-2 border-amber-400 box-border"
-    >
+    <section class="plant-lover w-9/10 mt-10 ml-10 mr-10 mb-20 box-border">
       <div
         class="container grid grid-cols-1 md:grid-cols-2 gap-3 justify-center"
       >
         <div class="left relative">
-          <div class="absolute md:visible sm:hidden">
-            <img
-              class="scale-45 z-10 translate-x-[+250px] translate-y-[-400px]"
-              src="./assets/trusted-badge.png"
-              alt=""
-            />
-          </div>
-          <div class="border-1 z-0 items-center justify-center">
+          <div class="z-0 items-center justify-center">
             <img
               class="scale-100 sm:pl-1 lg:pl-20 object-center object-contain"
               src="./assets/flower-store.png"
               alt="store"
+            />
+          </div>
+          <div class="absolute hidden lg:block">
+            <img
+              class="scale-45 z-1 translate-x-[+280px] translate-y-[-900px]"
+              src="./assets/trusted-badge.png"
+              alt=""
             />
           </div>
         </div>
@@ -260,7 +246,7 @@
       </div>
     </section>
     <section
-      class="deals2 w-9/10 mt-20 ml-10 mr-10 mb-10 border-2 border-amber-400 text-center box-border"
+      class="deals2 w-9/10 mt-20 ml-10 mr-10 mb-10 text-center box-border"
     >
       <div class="flex ml-10 mr-10 flex-col justify-center items-center">
         <h1 class="text-bold text-6xl mt-32 pb-2">
@@ -334,15 +320,13 @@
         </div>
       </div>
     </section>
-    <section
-      class="join w-full ml-0 mr-0 mb-10 border-2 border-amber-400 box-border"
-    >
+    <section class="join w-full ml-0 mr-0 mb-10 box-border">
       <div
         class="h-160 bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center"
       >
         <div class="pl-50 pr-50 pt-20">
           <h1
-            class="mt-15 sm:text-4xl md:text-5xl text-white md:text-bold text-center"
+            class="pt-3 text-white text-bold text-center sm:text-3xl md:text-5xl"
           >
             Join the Colorful Bunch
           </h1>
@@ -355,28 +339,28 @@
             />
             <input
               type="button"
-              class="bg-[#E95A08] px-6 py-3"
+              class="bg-[#E95A08] px-6 py-3 text-white text-bold hover:bg-gray-600"
               value="Subscribe"
             />
           </div>
         </div>
       </div>
     </section>
-    <section
-      class="footer w-9/10 ml-10 mr-10 mt-20 mb-10 border-2 border-amber-400 box-border"
-    >
+    <section class="footer w-9/10 ml-10 mr-10 mt-20 mb-10 box-border">
       <div class="grid sm:grid-cols-1 md:grid-cols-4 justify-center gap-auto">
-        <div class="flex flex-col justify-center items-center pl-5 pt-2">
+        <div
+          class="flex flex-col justify-center items-center pl-0 lg:pl-5 pt-2 pb-3"
+        >
           <div class="w-9/10">
-            <img class="scale-95" src="./assets/logo.png" alt="" />
-            <p class="text-left inter-asgn02 text-gray-500 pl-5">
+            <img class="scale-105 pb-3" src="./assets/logo.png" alt="" />
+            <p class="text-left inter-asgn02 text-gray-500 pl-5 pb-3">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop.
             </p>
           </div>
         </div>
         <div
-          class="flex flex-col inter-asgn02 text-gray-500 justify-center pl-5 pt-2"
+          class="flex flex-col inter-asgn02 text-gray-500 justify-center pl-5 pt-2 sm:pt-3"
         >
           <ul class="space-y-5">
             <li>Home</li>
@@ -398,7 +382,7 @@
           </ul>
         </div>
 
-        <div class="w-6/10 grid grid-cols-4 gay-y-2 gap-x-0.5 pl-5 pt-2 pb-2">
+        <div class="w-6/10 grid grid-cols-4 gay-y-2 gap-x-0.5 pl-5 pt-4 pb-2">
           <img src="./assets/icon-linkedin.png" alt="" />
           <img src="./assets/icon-twitter.png" alt="" />
           <img src="./assets/icon-facebook.png" alt="" />
