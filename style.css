@@ -14,13 +14,15 @@
   font-weight: 400;
   font-style: normal;
 }
-ul {
+.special-bullet {
   text-align: left;
+}
+.special-bullet ul {
   list-style-type: square;
   list-style-position: initial;
   padding: 30px;
 }
-ul li::marker {
+.special-bullet ul li::marker {
   font-size: 1.4em; /* Adjust as needed */
   color: gray;
   /* margin-left: 20px;

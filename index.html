@@ -24,7 +24,7 @@
       <nav class="navbar flex flex-row items-center justify-between">
         <img src="./assets/logo.png" alt="" />
         <div class="navbar-menu justify-end items-start text-xl">
-          <ul class="flex flex-1 flex-row gap-6">
+          <ul class="list-none flex flex-1 flex-row gap-6">
             <li class="text-xl font-bold text-[#252432] invisible lg:visible">
               <a href="#">Home</a>
             </li>
@@ -47,23 +47,21 @@
       class="banner w-9/10 mt-10 ml-10 mr-10 mb-10 border-2 border-amber-400 box-border"
     >
       <div
-        class="banner-container flex flex-col-reverse lg:flex-row mt-40 mb-10 justify-center"
+        class="banner-container flex flex-1 flex-col-reverse lg:flex-row mt-40 mb-10 justify-center"
       >
-        <div class="relative grid grid-cols-3 gap-0.5">
-          <div class="col-span-2 bottom-0 left-0 p-1.5">
-            <h1 class="text-bold text-6xl mt-32">
-              Always
-              <span class="text-[#E95A08]"
-                >Fresh <br />
-                Flowers</span
-              >
-            </h1>
-            <p class="inter-asgn02 text-gray-500 text-xl p-1.5">
-              Indulge your senses with the beauty and fragrance of our fresh
-              flower shop. From classic roses to exotic blooms, we offer a wide
-              variety of fresh flowers that are perfect for any occasion.
-            </p>
-          </div>
+        <div class="object-left-bottom">
+          <h1 class="text-bold text-6xl pt-36 pl-10">
+            Always
+            <span class="text-[#E95A08]"
+              >Fresh <br />
+              Flowers</span
+            >
+          </h1>
+          <p class="inter-asgn02 text-gray-500 text-2xl pl-10">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh flowers that are perfect for any occasion.
+          </p>
         </div>
 
         <img
@@ -207,48 +205,57 @@
       class="plant-lover w-9/10 mt-10 ml-10 mr-10 mb-20 border-2 border-amber-400 box-border"
     >
       <div
-        class="container grid grid-cols-1 md:grid-cols-2 gap-1.5 justify-center"
+        class="container grid grid-cols-1 md:grid-cols-2 gap-3 justify-center"
       >
-        <div class="left min-w-[400px] relative items-center">
-          <img
-            class="scale-95 z-0 pl-10 fit-content"
-            src="./assets/flower-store.png"
-            alt="store"
-          />
-          <img
-            class="absolute scale-35 z-10 translate-x-[+200px] translate-y-[-350px] sm:invisible"
-            src="./assets/trusted-badge.png"
-            alt=""
-          />
+        <div class="left relative">
+          <div class="absolute md:visible sm:hidden">
+            <img
+              class="scale-45 z-10 translate-x-[+250px] translate-y-[-400px]"
+              src="./assets/trusted-badge.png"
+              alt=""
+            />
+          </div>
+          <div class="border-1 z-0 items-center justify-center">
+            <img
+              class="scale-100 sm:pl-1 lg:pl-20 object-center object-contain"
+              src="./assets/flower-store.png"
+              alt="store"
+            />
+          </div>
         </div>
-        <div class="right min-w-[200px] relative items-baseline">
-          <h1 class="text-bold text-6xl mt-8 pt-8 pr-20">
+
+        <div class="right relative items-center">
+          <h1
+            class="text-bold text-6xl pt-10 sm:pr-2 sm:pl-2 md:pr-20 md:pl-10"
+          >
             Flower & Plant <br />
             <span class="text-[#E95A08]">Lovers</span>
           </h1>
-          <ul class="list-disc pr-20 pt-10">
-            <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-md p-1">
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
-              </p>
-            </li>
-            <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-md p-1">
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
-              </p>
-            </li>
-            <li class="pl-2">
-              <p class="inter-asgn02 text-gray-500 text-md p-1">
-                Indulge your senses with the beauty and fragrance of our fresh
-                flower shop. From classic roses to exotic blooms, we offer a
-                wide variety of fresh.
-              </p>
-            </li>
-          </ul>
+          <div class="special-bullet">
+            <ul class="pr-20 pt-10">
+              <li class="pl-5">
+                <p class="inter-asgn02 text-gray-500 text-md p-1">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+              <li class="pl-5">
+                <p class="inter-asgn02 text-gray-500 text-md p-1">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+              <li class="pl-5">
+                <p class="inter-asgn02 text-gray-500 text-md p-1">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -267,7 +274,7 @@
         <div
           class="grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
         >
-          <div class="p-4 row-span-1">
+          <div class="p-4 row-span-1 sm:order-1">
             <div class="relative">
               <img
                 class="fit-content rounded-2xl brightness-55 object-cover"
@@ -286,7 +293,7 @@
               </h2>
             </div>
           </div>
-          <div class="p-4 md:row-span-2 md:col-span-2">
+          <div class="p-4 sm:order-3 md:row-span-2 md:col-span-2 md:order-2">
             <div class="relative">
               <img
                 class="rounded-2xl brightness-55 object-cover"
@@ -294,18 +301,18 @@
                 alt=""
               />
               <h1
-                class="text-5xl top-36 left-8 right-8 bottom-8 text-white text-bold absolute"
+                class="text-xl top-16 left-8 right-8 bottom-8 md:text-5xl md:top-36 md:left-8 md:right-8 md:bottom-8 text-white text-bold absolute"
               >
                 25% Off | Zabo Plant
               </h1>
               <h2
-                class="text-xl top-52 left-12 right-12 bottom-8 text-white text-bold absolute underline"
+                class="text-xl top-24 left-9 right-8 bottom-8 md:top-52 md:left-12 md:right-12 md:bottom-8 text-white text-bold absolute underline"
               >
                 Shop Now
               </h2>
             </div>
           </div>
-          <div class="p-4 row-span-1">
+          <div class="p-4 row-span-1 col-span-1 sm:order-2 md:order-3">
             <div class="relative">
               <img
                 class="rounded-2xl brightness-55 object-cover"
@@ -334,7 +341,9 @@
         class="h-160 bg-[url('./assets/news-letter-bg.png')] bg-cover bg-center"
       >
         <div class="pl-50 pr-50 pt-20">
-          <h1 class="mt-15 text-5xl text-white text-bold text-center">
+          <h1
+            class="mt-15 sm:text-4xl md:text-5xl text-white md:text-bold text-center"
+          >
             Join the Colorful Bunch
           </h1>
           <div class="mt-30 p-10 flex flex-row justify-center items-center">
@@ -356,18 +365,18 @@
     <section
       class="footer w-9/10 ml-10 mr-10 mt-20 mb-10 border-2 border-amber-400 box-border"
     >
-      <div class="grid grid-cols-4 justify-center gap-1">
-        <div class="flex flex-col justify-left pl-5 pt-2 pb-3">
+      <div class="grid sm:grid-cols-1 md:grid-cols-4 justify-center gap-auto">
+        <div class="flex flex-col justify-center items-center pl-5 pt-2">
           <div class="w-9/10">
-            <img class="scale-75" src="./assets/logo.png" alt="" />
-            <p class="text-left inter-asgn02 text-gray-500">
+            <img class="scale-95" src="./assets/logo.png" alt="" />
+            <p class="text-left inter-asgn02 text-gray-500 pl-5">
               Indulge your senses with the beauty and fragrance of our fresh
               flower shop.
             </p>
           </div>
         </div>
         <div
-          class="flex flex-col pb-3 inter-asgn02 text-gray-500 justify-center"
+          class="flex flex-col inter-asgn02 text-gray-500 justify-center pl-5 pt-2"
         >
           <ul class="space-y-5">
             <li>Home</li>
@@ -378,7 +387,7 @@
           </ul>
         </div>
         <div
-          class="flex flex-col pb-3 inter-asgn02 text-gray-500 justify-center"
+          class="flex flex-col inter-asgn02 text-gray-500 justify-center pl-5 pt-2"
         >
           <ul class="space-y-5">
             <li>Features</li>
@@ -389,7 +398,7 @@
           </ul>
         </div>
 
-        <div class="w-6/10 pt-5 grid grid-cols-4 gay-y-2 gap-x-0.5">
+        <div class="w-6/10 grid grid-cols-4 gay-y-2 gap-x-0.5 pl-5 pt-2 pb-2">
           <img src="./assets/icon-linkedin.png" alt="" />
           <img src="./assets/icon-twitter.png" alt="" />
           <img src="./assets/icon-facebook.png" alt="" />
